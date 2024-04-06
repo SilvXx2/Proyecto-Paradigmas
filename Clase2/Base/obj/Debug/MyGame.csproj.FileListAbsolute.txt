@@ -112,3 +112,15 @@ C:\Users\timot\Desktop\Clase2\Base\obj\Debug\MyGame.csproj.CoreCompileInputs.cac
 C:\Users\timot\Desktop\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
 C:\Users\timot\Desktop\Clase2\Base\obj\Debug\MyGame.exe
 C:\Users\timot\Desktop\Clase2\Base\obj\Debug\MyGame.pdb
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\bullet.png
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\enemy.png
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\player.png
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\fondo.png
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.exe.config
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.exe
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.pdb
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.AssemblyReference.cache
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CoreCompileInputs.cache
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
+C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb

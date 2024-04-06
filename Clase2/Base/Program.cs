@@ -35,7 +35,7 @@ namespace MyGame
         {
             Engine.Clear();
 
-            Engine.Draw(image, 0, 0);
+            Engine.Draw(image, 0, 25);
 
             player.Render();
             /*foreach (Enemy enemy in EnemyList)
