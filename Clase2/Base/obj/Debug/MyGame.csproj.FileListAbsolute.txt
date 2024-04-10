@@ -124,3 +124,16 @@ C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame
 C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
 C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
 C:\Users\timot\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\bullet.png
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\enemy.png
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\player.png
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\fondo.png
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.exe.config
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.exe
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.pdb
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.AssemblyReference.cache
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.SuggestedBindingRedirects.cache
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CoreCompileInputs.cache
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
+D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb

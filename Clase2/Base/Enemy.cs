@@ -12,10 +12,14 @@ namespace MyGame
         private int posY = 0;
         IntPtr image = Engine.LoadImage("assets/enemy.png");
 
-        public Enemy(int x, int y)
+        
+        private Character player;
+
+        public Enemy(int x, int y, Character player)
         {
             posX = x;
             posY = y;
+            this.player = player;
         }
 
         public Enemy()
@@ -30,7 +34,21 @@ namespace MyGame
 
         public void Update()
         {
-            posY++;
+            
+            int speed = 2; 
+
+            if (player != null)
+            {
+                if (posX < player.PosX)
+                    posX += speed;
+                else if (posX > player.PosX)
+                    posX -= speed;
+
+                if (posY < player.PosY)
+                    posY += speed;
+                else if (posY > player.PosY)
+                    posY -= speed;
+            }
         }
     }
 }

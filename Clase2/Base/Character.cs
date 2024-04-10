@@ -8,13 +8,13 @@ namespace MyGame
 {
     public class Character
     {
-        private int posX = 0;
-        private int posY = 0;
+        public int PosX { get; private set; } = 0;
+        public int PosY { get; private set; } = 0;
         IntPtr image = Engine.LoadImage("assets/player.png");
 
         public Character(int x, int y) {
-            posX = x;
-            posY = y;
+            PosX = x;
+            PosY = y;
         }
 
         public Character()
@@ -24,56 +24,56 @@ namespace MyGame
 
         public void Render()
         {
-            Engine.Draw(image, posX, posY);
+            Engine.Draw(image, PosX, PosY);
         }
 
         public void Update()
         {
-            int speed = 4; // Player´s Speed
+            int speed = 4; 
 
             if (Engine.KeyPress(Engine.KEY_LEFT))
             {
-                posX -= speed;
+                PosX -= speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_RIGHT))
             {
-                posX += speed;
+                PosX += speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_UP))
             {
-                posY -= speed;
+                PosY -= speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_DOWN))
             {
-                posY += speed;
+                PosY += speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_A))
             {
-                posX -= speed;
+                PosX -= speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_D))
             {
-                posX += speed;
+                PosX += speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_W))
             {
-                posY -= speed;
+                PosY -= speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_S))
             {
-                posY += speed;
+                PosY += speed;
             }
 
             if (Engine.KeyPress(Engine.KEY_ESC))
             {
-                // Hacer algo cuando se presiona ESC
+                
             }
 
             if (Engine.KeyPress(Engine.KEY_ESP))
@@ -85,7 +85,7 @@ namespace MyGame
 
         public void Shoot()
         {
-            Program.BulletList.Add(new Bullet(posX+48, posY));
+            Program.BulletList.Add(new Bullet(PosX+48, PosY));
         }
     }
 }
