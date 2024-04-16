@@ -8,84 +8,50 @@ namespace MyGame
 {
     public class Character
     {
-        public int PosX { get; private set; } = 0;
-        public int PosY { get; private set; } = 0;
+        private Transform transform;
+        private CharacterController controller;
         IntPtr image = Engine.LoadImage("assets/player.png");
+        //private AnimatorController idle;
+        //private AnimatorController run;
+        //private AnimatorController currentAnimation;
 
-        public Character(int x, int y) {
-            PosX = x;
-            PosY = y;
-        }
-
-        public Character()
+        public Transform Transform { get { return transform; } }
+        public Character(Vector2 position)
         {
-
+            transform = new Transform(position);
+            controller = new CharacterController(transform);
+            CreateAnimations();
+            // currentAnimation = idle;
         }
 
         public void Render()
         {
-            Engine.Draw(image, PosX, PosY);
+            transform.Position = new Vector2(200, 200);
+            Engine.Draw(image, transform.Position.x, transform.Position.y);
         }
 
         public void Update()
         {
-            int speed = 4; 
+            controller.GetInputs();
 
-            if (Engine.KeyPress(Engine.KEY_LEFT))
-            {
-                PosX -= speed;
-            }
 
-            if (Engine.KeyPress(Engine.KEY_RIGHT))
-            {
-                PosX += speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_UP))
-            {
-                PosY -= speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_DOWN))
-            {
-                PosY += speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_A))
-            {
-                PosX -= speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_D))
-            {
-                PosX += speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_W))
-            {
-                PosY -= speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_S))
-            {
-                PosY += speed;
-            }
-
-            if (Engine.KeyPress(Engine.KEY_ESC))
-            {
-                
-            }
-
-            if (Engine.KeyPress(Engine.KEY_ESP))
-            {
-                Shoot();
-            }
         }
-
 
         public void Shoot()
         {
-            Program.BulletList.Add(new Bullet(PosX+48, PosY));
+            //    Program.BulletList.Add(new Bullet(posX+48, posY));
+        }
+
+        private void CreateAnimations()
+        {
+            List<IntPtr> idleTextures = new List<IntPtr>();
+            for (int i = 0; i < 4; i++)
+            {
+                IntPtr frame = Engine.LoadImage($"assets/Ship/Idle/{i}.png");
+                idleTextures.Add(frame);
+            }
+            // idle = new AnimatorController("Idle", idleTextures, 0.1f, true);
+            // currentAnimation = idle;
         }
     }
 }

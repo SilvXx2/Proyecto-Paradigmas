@@ -14,7 +14,7 @@ namespace MyGame
         static public List<Enemy> EnemyList = new List<Enemy>();
         static public List<Bullet> BulletList = new List<Bullet>();
 
-        static Character player = new Character(350, 350);
+        static Character player = new Character(new Vector2(200, 200));
 
         static void Main(string[] args)
         {
@@ -66,9 +66,9 @@ namespace MyGame
 
         private static void CreateEnemies()
         {
-            EnemyList.Add(new Enemy(0, 0,player));
-            EnemyList.Add(new Enemy(200, 0,player));
-            
+            EnemyList.Add(new Enemy());
+            EnemyList.Add(new Enemy(new));
+
         }
 
 
@@ -76,5 +76,3 @@ namespace MyGame
     }
 
 }
-
-

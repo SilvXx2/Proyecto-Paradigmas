@@ -8,47 +8,49 @@ namespace MyGame
 {
     public class Enemy
     {
-        private int posX = 0;
-        private int posY = 0;
+        Transform transform;
+       
+        // private int posX = 0;
+        //private int posY = 0;
         IntPtr image = Engine.LoadImage("assets/enemy.png");
 
-        
+        public Transform Transform { get { return transform; } }   
+
+
         private Character player;
-
-        public Enemy(int x, int y, Character player)
+        /*public Enemy(int posX, int posY, Character player)
         {
-            posX = x;
-            posY = y;
+            this.posX = posX;
+            this.posY = posY;
+
             this.player = player;
-        }
-
-        public Enemy()
+        }*/
+        public Enemy(Vector2 position)
         {
-
+            transform = new Transform(position);    
         }
-
         public void Render()
         {
-            Engine.Draw(image, posX, posY);
+            Engine.Draw(image, transform.Position.x, transform.Position.y);
         }
 
         public void Update()
         {
-            
-            int speed = 2; 
+
+         /*  int speed = 2;
 
             if (player != null)
             {
-                if (posX < player.PosX)
-                    posX += speed;
-                else if (posX > player.PosX)
+                if (transform.Position.x < player.Transform.Position.x)
+                    transform.Position.x += speed;
+                else if (transform.Position.x > player.Transform.Position.x)
                     posX -= speed;
 
-                if (posY < player.PosY)
+                if (posY < player.Transform.Position.y)
                     posY += speed;
-                else if (posY > player.PosY)
+                else if (posY > player.Transform.Position.y)
                     posY -= speed;
-            }
+            } */
         }
     }
 }
