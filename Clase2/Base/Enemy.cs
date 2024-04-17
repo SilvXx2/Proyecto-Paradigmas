@@ -31,26 +31,9 @@ namespace MyGame
         }
         public void Render()
         {
+            
             Engine.Draw(image, transform.Position.x, transform.Position.y);
         }
 
-        public void Update()
-        {
-
-         /*  int speed = 2;
-
-            if (player != null)
-            {
-                if (transform.Position.x < player.Transform.Position.x)
-                    transform.Position.x += speed;
-                else if (transform.Position.x > player.Transform.Position.x)
-                    posX -= speed;
-
-                if (posY < player.Transform.Position.y)
-                    posY += speed;
-                else if (posY > player.Transform.Position.y)
-                    posY -= speed;
-            } */
-        }
     }
 }

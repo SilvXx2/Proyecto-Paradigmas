@@ -54,10 +54,10 @@ namespace MyGame
         private static void Update()
         {
             player.Update();
-            foreach (Enemy enemy in EnemyList)
+          /*  foreach (Enemy enemy in EnemyList)
             {
-                enemy.Update();
-            }
+                enemy.Update(player);
+            }*/
             foreach (Bullet bullet in BulletList)
             {
                 bullet.Update();
@@ -66,8 +66,8 @@ namespace MyGame
 
         private static void CreateEnemies()
         {
-            EnemyList.Add(new Enemy());
-            EnemyList.Add(new Enemy(new));
+            EnemyList.Add(new Enemy(new Vector2(300,300)));
+            EnemyList.Add(new Enemy(new Vector2(200,200)));
 
         }
 
