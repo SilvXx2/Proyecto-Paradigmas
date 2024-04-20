@@ -9,8 +9,6 @@ namespace MyGame
     public class Transform
     {
         private Vector2 position;
-        private Vector2 scale;
-        public Vector2 Scale => scale;
         public Vector2 Position
         {
             set
@@ -25,10 +23,9 @@ namespace MyGame
         }
 
 
-        public Transform(Vector2 position, Vector2 scale)
+        public Transform(Vector2 position)
         {
             this.position = position;
-            this.scale = scale;
         }
 
         public void Translate(Vector2 direccion, int speed)
