@@ -16,7 +16,7 @@ namespace MyGame
         private void CheckCollisions()
         {
 
-            /*for (int i = 0; i < Program.EnemyList.Count; i++)
+            for (int i = 0; i < Program.EnemyList.Count; i++)
             {
                 Enemy enemy = Program.EnemyList[i];
                 float distanceX = Math.Abs((enemy.Transform.Position.x + (enemy.Transform.Scale.x / 2)) - (transform.Position.x + (transform.Scale.x / 2)));
@@ -31,7 +31,7 @@ namespace MyGame
                     Program.EnemyList.Remove(enemy);
                 }
             }
-        }*/
+        }
 
 
         public void Render()

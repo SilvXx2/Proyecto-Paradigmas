@@ -11,17 +11,17 @@ namespace MyGame
         private Transform transform;
         private CharacterController controller;
         IntPtr image = Engine.LoadImage("assets/player.png");
-        //private AnimatorController idle;
-        //private AnimatorController run;
-        //private AnimatorController currentAnimation;
+        private AnimatorController idle;
+        private AnimatorController run;
+        private AnimatorController currentAnimation;
 
-        public Transform Transform { get { return transform; } }
+        public Transform Transform { get { return transform; } }    
         public Character(Vector2 position)
         {
             transform = new Transform(position);
             controller = new CharacterController(transform);
             CreateAnimations();
-            // currentAnimation = idle;
+            currentAnimation = idle;
         }
 
         public void Render()
@@ -50,8 +50,8 @@ namespace MyGame
                 IntPtr frame = Engine.LoadImage($"assets/Ship/Idle/{i}.png");
                 idleTextures.Add(frame);
             }
-            // idle = new AnimatorController("Idle", idleTextures, 0.1f, true);
-            // currentAnimation = idle;
+            idle = new AnimatorController("Idle", idleTextures, 0.1f, true);
+            currentAnimation = idle;
         }
     }
 }

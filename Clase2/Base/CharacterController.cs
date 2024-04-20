@@ -12,6 +12,8 @@ namespace MyGame
         private Transform transform;
         private DateTime timeLastShoot;
         private float timeBetweenShoots = 1;
+        private Vector2 direction = new Vector2(0, -1); // Por defecto, el personaje mira hacia arriba
+
 
         public CharacterController(Transform transform)
         {
@@ -20,65 +22,48 @@ namespace MyGame
 
         public void GetInputs()
         {
-            if (Engine.KeyPress(Engine.KEY_LEFT))
+            if (Engine.KeyPress(Engine.KEY_LEFT) || Engine.KeyPress(Engine.KEY_A))
             {
-                transform.Translate(new Vector2(-1, 0), speed);
+                direction = new Vector2(-1, 0);
+                transform.Translate(direction, speed);
+            }
+            else if (Engine.KeyPress(Engine.KEY_RIGHT) || Engine.KeyPress(Engine.KEY_D))
+            {
+                direction = new Vector2(1, 0);
+                transform.Translate(direction, speed);
             }
 
-
-            if (Engine.KeyPress(Engine.KEY_RIGHT))
+            if (Engine.KeyPress(Engine.KEY_UP) || Engine.KeyPress(Engine.KEY_W))
             {
-                transform.Translate(new Vector2(1, 0), speed);
+                direction = new Vector2(0, -1);
+                transform.Translate(direction, speed);
             }
-
-            if (Engine.KeyPress(Engine.KEY_UP))
+            else if (Engine.KeyPress(Engine.KEY_DOWN) || Engine.KeyPress(Engine.KEY_S))
             {
-                transform.Translate(new Vector2(0, -1), speed);
-            }
-
-            if (Engine.KeyPress(Engine.KEY_DOWN))
-            {
-                transform.Translate(new Vector2(0, 1), speed);
+                direction = new Vector2(0, 1);
+                transform.Translate(direction, speed);
             }
 
             if (Engine.KeyPress(Engine.KEY_ESP))
             {
-                Shoot();
-            }
-
-            if (Engine.KeyPress(Engine.KEY_A))
-            {
-                transform.Translate(new Vector2(-1, 0), speed);
-            }
-
-
-            if (Engine.KeyPress(Engine.KEY_D))
-            {
-                transform.Translate(new Vector2(1, 0), speed);
-            }
-
-            if (Engine.KeyPress(Engine.KEY_W))
-            {
-                transform.Translate(new Vector2(0, -1), speed);
-            }
-
-            if (Engine.KeyPress(Engine.KEY_S))
-            {
-                transform.Translate(new Vector2(0, 1), speed);
+                Shoot(direction); // Pasa la dirección al método Shoot
             }
 
             if (Engine.KeyPress(Engine.KEY_ESC)) { }
-
         }
-        public void Shoot()
+
+        public void Shoot(Vector2 direction)
         {
             DateTime currentTime = DateTime.Now;
             if ((currentTime - timeLastShoot).TotalSeconds >= timeBetweenShoots)
             {
-                Program.BulletList.Add(new Bullet(transform.Position.x + 48, transform.Position.y));
+                // Calcula la posición inicial del disparo basándote en la dirección actual
+                int posX = transform.Position.x + (direction.x * 48); // 48 es un valor arbitrario, ajusta según el tamaño del personaje
+                int posY = transform.Position.y + (direction.y * 48); // 48 es un valor arbitrario, ajusta según el tamaño del personaje
+                Program.BulletList.Add(new Bullet(new Vector2(posX, posY)));
                 timeLastShoot = currentTime;
             }
-    ;
         }
+
     }
 }

@@ -149,3 +149,8 @@ C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame
 C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
 C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
 C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb
+D:\ version de la clase\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.AssemblyReference.cache
+D:\ version de la clase\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.SuggestedBindingRedirects.cache
+D:\ version de la clase\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CoreCompileInputs.cache
+D:\ version de la clase\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
+D:\ version de la clase\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb
