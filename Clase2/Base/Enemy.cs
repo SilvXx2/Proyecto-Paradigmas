@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,47 +9,29 @@ namespace MyGame
 {
     public class Enemy
     {
-        private int posX = 0;
-        private int posY = 0;
+        Transform transform;
+        public Transform Transform { get { return transform; } }
+        //private int posX = 0;
+        //private int posY = 0;
         IntPtr image = Engine.LoadImage("assets/enemy.png");
 
         
         private Character player;
-
-        public Enemy(int x, int y, Character player)
+        public Enemy(Vector2 position)
         {
-            posX = x;
-            posY = y;
-            this.player = player;
-        }
-
-        public Enemy()
-        {
-
+            transform = new Transform(position);
         }
 
         public void Render()
         {
-            Engine.Draw(image, posX, posY);
+            Engine.Draw(image, transform.Position.x, transform.Position.y);
         }
 
         public void Update()
         {
-            
-            int speed = 2; 
 
-            if (player != null)
-            {
-                if (posX < player.PosX)
-                    posX += speed;
-                else if (posX > player.PosX)
-                    posX -= speed;
+            transform.Translate(new Vector2(0, 10), 5);
 
-                if (posY < player.PosY)
-                    posY += speed;
-                else if (posY > player.PosY)
-                    posY -= speed;
-            }
         }
     }
 }

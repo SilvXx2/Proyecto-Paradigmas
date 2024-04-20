@@ -14,7 +14,7 @@ namespace MyGame
         static public List<Enemy> EnemyList = new List<Enemy>();
         static public List<Bullet> BulletList = new List<Bullet>();
 
-        static Character player = new Character(350, 350);
+        static Character player = new Character(new Vector2(200, 200) );
 
         static void Main(string[] args)
         {
@@ -31,7 +31,7 @@ namespace MyGame
             }
         }
 
-        private static void Render()
+        public static void Render()
         {
             Engine.Clear();
 
@@ -51,7 +51,7 @@ namespace MyGame
             Engine.Show();
         }
 
-        private static void Update()
+        public static void Update()
         {
             player.Update();
             foreach (Enemy enemy in EnemyList)
@@ -66,11 +66,11 @@ namespace MyGame
 
         private static void CreateEnemies()
         {
-            EnemyList.Add(new Enemy(0, 0,player));
-            EnemyList.Add(new Enemy(200, 0,player));
-            
-        }
+            EnemyList.Add(new Enemy(new Vector2(0, 0)));
+            EnemyList.Add(new Enemy(new Vector2(200, 0)));
 
+        }
+        
 
 
     }

@@ -47,21 +47,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimatorController.cs" />
     <Compile Include="Bullet.cs" />
     <Compile Include="Character.cs" />
+    <Compile Include="CharacterController.cs" />
     <Compile Include="Enemy.cs" />
     <Compile Include="Font.cs" />
     <Compile Include="Engine.cs" />
+    <Compile Include="GameManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sound.cs" />
+    <Compile Include="Time.cs" />
     <Compile Include="Transform.cs" />
     <Compile Include="Vector2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="assets\Bullet\" />
+    <Folder Include="assets\Character\" />
+    <Folder Include="assets\Enemy\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="assets\bullet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

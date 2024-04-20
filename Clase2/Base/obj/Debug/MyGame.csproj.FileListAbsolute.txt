@@ -137,3 +137,15 @@ D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\o
 D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
 D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
 D:\Project1\Project1\Prueba Miercoles proyecto\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\bullet.png
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\enemy.png
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\player.png
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\assets\fondo.png
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.exe.config
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.exe
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\bin\Debug\MyGame.pdb
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.AssemblyReference.cache
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CoreCompileInputs.cache
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.csproj.CopyComplete
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.exe
+C:\Users\timte\Documents\GitHub\Proyecto-Paradigmas\Clase2\Base\obj\Debug\MyGame.pdb
